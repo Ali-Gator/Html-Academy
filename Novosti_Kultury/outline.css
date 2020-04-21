@@ -1,0 +1,8 @@
+* { outline: 2px dotted red; }
+* * { outline: 2px dotted orange; }
+* * * { outline: 2px dotted green; }
+* * * * { outline: 2px dotted blue; }
+* * * * * { outline: 1px solid violet; }
+* * * * * * { outline: 1px solid yellow; }
+* * * * * * * { outline: 1px solid skyblue; }
+* * * * * * * * { outline: 1px solid red; }
