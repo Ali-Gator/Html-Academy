@@ -2,12 +2,6 @@ body {
   min-width: 1366px;
   margin: 0;
   padding: 0;
-  /* временно */
- background-image: url(pics/каталог.png);
- background-repeat: no-repeat;
- background-size: 1366px auto;
- min-width: 1366px;
-
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -693,8 +687,17 @@ footer a {
   }
 .filters {
   float: left;
-  margin-top: 32px;
-  width: 230px;
+  margin-top: 0px;
+  width: 240px;
+}
+
+.filters fieldset label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.filters fieldset legend {
+  margin-bottom: 20px;
 }
 
 .watches {
@@ -909,6 +912,190 @@ color: #444240;
   background: url(pics/ruble.svg) no-repeat;
   background-size: contain;
 }
+
+.card-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.card-photo-full {
+  text-align: center;
+  filter: drop-shadow(5px 5px 10px rgba(92, 92, 80, 0.23));
+}
+
+.card-photo-full::before {
+  content: url(pics/arrow_left.svg);
+  position: relative;
+  top: -242px;
+  left: -50px; 
+}
+
+.card-photo-full::after {
+  content: url(pics/arrow_right.svg);
+  position: relative;
+  top: -242px;
+  right: -50px; 
+}
+
+.card-photo-preview {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: -19px;
+  margin-left: 10px;
+  margin-top: 25px;
+}
+
+.card-photo-preview-item {
+  margin-right: 19px;
+  background-color: rgba(100, 100, 100, 0.15);
+  filter: drop-shadow(5px 5px 10px rgba(92, 92, 80, 0.23));
+}
+
+.card-photo-preview-item:first-child {
+  background-color: transparent;
+}
+
+.right-column {
+  margin-left: 38px;
+  margin-top: 28px;
+  padding: 49px 59px;
+}
+
+.card-description-header {
+  margin-bottom: 0px;
+  font-weight: bold;
+font-size: 24px;
+line-height: 37px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+color: #444240;
+}
+
+.card-description-header::after {
+  content: url(pics/vector.svg);
+position: relative;
+right: -270px;
+}
+
+.card-description-price {
+  margin-top: 10px;
+  font-size: 24px;
+   line-height: 28px;
+color: #686868;
+}
+
+.card-description-tabs {
+position: relative;
+}
+
+.card-description-tabs-item {
+  margin-top: 44px;
+  margin-bottom: 30px;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+
+color: #444240;
+}
+
+.card-description-tabs-item:first-child::after {
+content: "";
+display: block;
+position: relative;
+top: 5px;
+width: 71px;
+border: 1px solid #C4C0B6;
+}
+
+.card-description-tabs-item:last-child {
+  position: absolute;
+  top: -45px;
+  left: 123px;
+}
+
+.card-description-text {
+  margin: 0;
+}
+
+.card-description-text p {
+  margin-bottom: 22px;
+  padding-right: 5px;
+  font-weight: 300;
+font-size: 14px;
+line-height: 23px;
+
+color: #000000;
+}
+
+.card-button {
+  padding: 25px 56px;
+  background-color: #31302C;
+}
+
+.title-visited {
+  margin-top: 78px;
+  margin-left: 12px;
+}
+
+.cards-visited-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 20px;
+  margin-right: -40px;
+}
+
+.cards-visited-wrapper::before {
+  content: url(pics/arrow_left.svg);
+  position: relative;
+  top: 190px;
+  left: -58px;
+}
+
+.cards-visited-wrapper::after {
+  content: url(pics/arrow_right.svg);
+  position: relative;
+  top: 190px;
+  right: 20px;
+}
+
+.cards-visited-item {
+  width: 360px;
+  margin-right: 40px;
+  background-color: #FDFDFB;
+}
+
+.cards-visited-item-title {
+  margin: 0;
+  margin-top: 33px;
+  font-weight: bold;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: 0.05em;
+
+color: #444240;
+}
+
+.cards-visited-item-price {
+ margin: 0;
+ margin-top: 2px;
+  color: #636261;
+}
+
+.cards-visited-item-image {
+  position: relative;
+  top: -60px;
+  right: 15px;
+  filter: drop-shadow(5px 5px 10px rgba(92, 92, 80, 0.23));
+}
+
+.card-footer {
+  margin-top: 20px;
+}
+
 
 
 
